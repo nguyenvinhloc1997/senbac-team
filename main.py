@@ -107,7 +107,7 @@ async def send_chunks():
         
         # Calculate frame size based on average MP3 frame size
         # For 8k bitrate, each frame is roughly 400-600 bytes
-        frame_size = 549  # Based on observed frame size from logs
+        frame_size = 549  # Based on observed frame size from logs (Manually input)
         
         # Calculate number of frames
         total_frames = (len(mp3_data) - audio_start) // frame_size
